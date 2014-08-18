@@ -26,7 +26,7 @@ on run {}
 		try
 			destinationFolder
 		on error
-			return
+			error "No folder found called 'Archived Mail'"
 		end try
 		
 		-- Iterate through selected items
