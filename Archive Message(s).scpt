@@ -18,7 +18,7 @@ on run {}
 		set allFolders to mail folders
 		repeat with aFolder in allFolders
 			
-			if (name of aFolder is "Archived Mail") then
+			if (name of aFolder is "Archive") then
 				set destinationFolder to aFolder
 			end if
 		end repeat
@@ -26,7 +26,7 @@ on run {}
 		try
 			destinationFolder
 		on error
-			error "No folder found called 'Archived Mail'"
+			error "No folder found called 'Archive'"
 		end try
 		
 		-- Iterate through selected items
